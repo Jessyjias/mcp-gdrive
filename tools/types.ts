@@ -42,3 +42,19 @@ export interface GSheetsReadInput {
   sheetId?: number; // Optional specific sheet ID
 }
 
+export interface GDriveCreateFileInput {
+  name: string;
+  content: string;
+  mimeType?: string;
+}
+
+export interface GDriveWriteFileInput {
+  fileId: string;
+  content: string;
+}
+
+export interface GDriveListMCPFilesInput {
+  pageToken?: string;
+  pageSize?: number;
+}
+
